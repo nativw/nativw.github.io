@@ -1,6 +1,6 @@
-# Get-ChangedProperties: Track Active Directory Attribute Changes
+# Tracking Active Directory Attribute Changes
 
-Monitoring changes in Active Directory (AD) attributes is crucial for maintaining security, ensuring compliance, and troubleshooting issues. To facilitate this, I've developed a PowerShell script—**Get-ChangedProperties**—that tracks attribute modifications for user and computer accounts across all domain controllers.
+Monitoring changes in Active Directory (AD) attributes is crucial for maintaining security, ensuring compliance, and troubleshooting issues. To facilitate this, I've developed a PowerShell script—**[Get-ChangedProperties.ps1](https://github.com/nativw/Get-ChangedProperties/blob/4d274ea334806ee0c8c79ee1faf3a7ead294b44d/Get-ChangedProperties.ps1)**—that tracks attribute modifications for user and computer accounts across all domain controllers.
 
 ---
 
