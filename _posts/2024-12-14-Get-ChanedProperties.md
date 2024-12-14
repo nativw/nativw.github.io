@@ -23,7 +23,7 @@ Active Directory serves as the backbone for authentication and authorization in 
 
 ## Script Overview
 
-The **Get-ChangedProperties.ps1** script examines specified AD accounts to identify attribute changes within a defined timeframe. It queries all domain controllers to ensure comprehensive tracking.
+The **`Get-ChangedProperties.ps1`** script examines specified AD accounts to identify attribute changes within a defined timeframe. It queries all domain controllers to ensure comprehensive tracking.
 
 ### Key Features
 
@@ -64,6 +64,14 @@ To check for changes in the past 7 days for the user account `jdoe`, use the fol
 & "C:\Scripts\Get-ChangedProperties.ps1" -DaysToCheck 7 -AccountName "jdoe" -ObjectType "User"
 ```
 
+#### Sample Output
+
+    AttributeName  LastChangeTime       DomainController 
+    -------------- -------------------  ----------------- 
+    mail            10-Dec-24 14:32:00  DC01             
+    department      11-Dec-24 09:15:00  DC02             
+    title           12-Dec-24 10:10:00  DC03             
+
 ### Checking a Computer Account
 
 To check for changes in the past 7 days for the computer account `COMP01`, use the following command:
@@ -71,17 +79,17 @@ To check for changes in the past 7 days for the computer account `COMP01`, use t
 & "C:\Scripts\Get-ChangedProperties.ps1" -DaysToCheck 7 -AccountName "COMP01" -ObjectType "Computer"
 ```
 
-## Sample Output
+#### Sample Output
 
-    Attribute Name  Last Change Time     Domain Controller 
+    AttributeName  LastChangeTime       DomainController 
     -------------- -------------------  ----------------- 
-    mail            2024-12-10 14:32:00  DC01             
-    department      2024-12-11 09:15:00  DC02             
-    title           2024-12-12 10:10:00  DC03             
+    IPv4Address     10-Dec-24 14:32:00  DC01             
+    MemberOf        11-Dec-24 09:15:00  DC02             
+    Enabled         12-Dec-24 10:10:00  DC03             
 
 ## Error Handling
 
-The **Get-ChangedProperties.ps1** script includes basic error handling to ensure smooth execution. However, it's important to consider the following potential issues:
+The **`Get-ChangedProperties.ps1`** script includes basic error handling to ensure smooth execution. However, it's important to consider the following potential issues:
 
 - **Incorrect Account Name**: If the specified account does not exist, the script will return an error indicating that the account could not be found.
 - **Invalid Object Type**: If an invalid `ObjectType` (e.g., other than "User" or "Computer") is provided, the script will throw an error.
@@ -93,6 +101,6 @@ For troubleshooting, ensure that your account has sufficient privileges and that
 
 ## Conclusion
 
-The **Get-ChangedProperties.ps1** script is a powerful tool for monitoring Active Directory attribute changes, which is crucial for maintaining security and operational integrity. By tracking changes in real-time, administrators can quickly identify unauthorized modifications, ensure compliance, and streamline troubleshooting efforts. 
+The **`Get-ChangedProperties.ps1`** script is a powerful tool for monitoring Active Directory attribute changes, which is crucial for maintaining security and operational integrity. By tracking changes in real-time, administrators can quickly identify unauthorized modifications, ensure compliance, and streamline troubleshooting efforts. 
 
-Feel free to try out the script and provide feedback or improvements. You can find the [Get-ChangedProperties.ps1 script here](https://github.com/nativw/Get-ChangedProperties/blob/4d274ea334806ee0c8c79ee1faf3a7ead294b44d/Get-ChangedProperties.ps1).
+Feel free to try out the script and provide feedback or improvements. You can find the **`Get-ChangedProperties.ps1`** script [here](https://github.com/nativw/Get-ChangedProperties/blob/4d274ea334806ee0c8c79ee1faf3a7ead294b44d/Get-ChangedProperties.ps1).
