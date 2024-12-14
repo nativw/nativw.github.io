@@ -73,11 +73,11 @@ To check for changes in the past 7 days for the computer account `COMP01`, use t
 
 ## Sample Output
 
-| Attribute Name | Last Change Time    | Domain Controller |
-| -------------- | ------------------- | ----------------- |
-| mail           | 2024-12-10 14:32:00 | DC01              |
-| department     | 2024-12-11 09:15:00 | DC02              |
-| title          | 2024-12-12 10:10:00 | DC03              |
+    Attribute Name  Last Change Time     Domain Controller 
+    -------------- -------------------  ----------------- 
+    mail            2024-12-10 14:32:00  DC01             
+    department      2024-12-11 09:15:00  DC02             
+    title           2024-12-12 10:10:00  DC03             
 
 ## Error Handling
 
