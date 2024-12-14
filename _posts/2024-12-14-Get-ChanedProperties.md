@@ -46,3 +46,4 @@ The **Get-ChangedProperties** script examines specified AD accounts to identify 
 
 ```powershell
 & 'C:\Scripts\Get-ChangedProperties.ps1' -DaysToCheck <Days> -AccountName <AccountName> -ObjectType <User|Computer>
+```
