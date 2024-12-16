@@ -68,9 +68,9 @@ To check for changes in the past 7 days for the user account `jdoe`, use the fol
 
     AttributeName  LastChangeTime       DomainController 
     -------------- -------------------  ----------------- 
-    mail            10-Dec-24 14:32:00  DC01             
-    department      11-Dec-24 09:15:00  DC02             
-    title           12-Dec-24 10:10:00  DC03             
+    mail           10-Dec-24 14:32:00   DC01             
+    department     11-Dec-24 09:15:00   DC02             
+    title          12-Dec-24 10:10:00   DC03             
 
 ### Checking a Computer Account
 
@@ -83,9 +83,9 @@ To check for changes in the past 7 days for the computer account `COMP01`, use t
 
     AttributeName  LastChangeTime       DomainController 
     -------------- -------------------  ----------------- 
-    IPv4Address     10-Dec-24 14:32:00  DC01             
-    MemberOf        11-Dec-24 09:15:00  DC02             
-    Enabled         12-Dec-24 10:10:00  DC03             
+    IPv4Address    10-Dec-24 14:32:00   DC01             
+    MemberOf       11-Dec-24 09:15:00   DC02             
+    Enabled        12-Dec-24 10:10:00   DC03             
 
 ## Error Handling
 
