@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Tracking Active Directory Attribute Changes
-category: Active Directory
-tags: PowerShell ActiveDirectory
+categories: PowerShell ActiveDirectory
+tags: powerShell activedirectory
 image:
  path: CommonFiles/PS-Get-ChangedProperties.jpg
  alt: Get Changed AD Properties
