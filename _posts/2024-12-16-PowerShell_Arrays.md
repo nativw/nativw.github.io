@@ -4,6 +4,9 @@ layout: post
 date: 2024-12-16
 tags: powershell scripting datastructures
 categories: PowerShell Arrays
+image:
+ path: CommonFiles/Array-1d.jpg
+ alt: Simple Array Example
 ---
 
 Arrays are a fundamental data structure in PowerShell, allowing you to store, manage, and process collections of values efficiently. Whether you’re managing objects, looping through datasets, or performing complex calculations, arrays provide a versatile solution. In this article, we’ll explore various operations you can perform on arrays and answer common questions that arise when working with them.
