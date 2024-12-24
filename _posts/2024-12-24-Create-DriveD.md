@@ -1,57 +1,62 @@
-# Create-DriveD.ps1
+---
+layout: post
+title: "Introducing Create-DriveD"
+date: 2024-12-24
+categories: [PowerShell, Security]
+tags: [powershell, security, bitlocker, encryption]
+image:
+ path: CommonFiles/Create-DriveD.png
+ alt: Encryption
+---
 
-Link to the script on GitHub:  
+# Create-DriveD.ps1  
 
-[https://github.com/nativw/Create-DriveD](https://github.com/nativw/Create-DriveD)
+[Link to the script on GitHub](https://github.com/nativw/Create-DriveD)  
 
-## Overview
+## Overview  
 
-This PowerShell script shrinks the C drive, creates a new partition D, and encrypts it if needed. If the C drive is encrypted, the script uses the MBAM script (`Invoke-MbamClientDeployment.ps1`) from Microsoft to escrow the encryption key to the MBAM server.
+Creating new partitions on computers can sometimes be a tedious task, especially if you're an IT professional supporting multiple remote sites.  
 
-## Features
+Instead of connecting to remote computers one by one, I wrote an automatic script designed to simplify disk management and encryption tasks. This script can be modified to fit your specific requirements and can be deployed remotely using automated tools such as SCCM, BigFix, PDQ Deploy, Ansible, or even custom PowerShell remoting scripts.  
 
-- Shrinks the C drive by a specified amount.
-- Creates a new partition D.
-- Encrypts the new partition D if the C drive is encrypted.
-- Uses the MBAM script to escrow the encryption key to the MBAM server.
+## Key Features  
 
-## Prerequisites
+- **Automated Partition Management:**  
+  - Shrinks the C drive by a specified amount.  
+  - Creates a new partition labeled as D.  
 
-- Administrative privileges to run the script.
-- BitLocker and MBAM configured in your environment.
-- Replace the **`<YourRecoveryServiceEndpoint>`** with your real address of the service endpoint in your environment.
+- **Encryption Integration:**  
+  - Automatically encrypts the new partition D if the C drive is encrypted.  
+  - Uses the MBAM script (`Invoke-MbamClientDeployment.ps1`) to securely escrow encryption keys to an MBAM server.  
 
-## **Usage**
+- **Flexibility and Customization:**  
+  - The script is designed to be easily adapted to different environments and requirements.  
 
-1. Navigate to the script directory:
-    
-    ```powershell
-    cd path\to\script
-    ```
-    
-2. Run the script with the required parameter:
-    
-    ```powershell
-    .\Create-DriveD.ps1 -TakeFromCinGB <amount in GB>
-    ```
-    
+## Prerequisites  
 
-## **Parameters**
+To use this script effectively, ensure the following:  
 
-- `TakeFromCinGB`: The amount of space to be taken from the C drive in GB.
+1. **Administrative Privileges:**  
+   Run the script with admin rights to access disk and encryption features.  
 
-## **Example**
+2. **BitLocker and MBAM Configuration:**  
+   BitLocker encryption and MBAM should be properly configured in your environment.  
 
-```powershell
-.\Create-DriveD.ps1 -TakeFromCinGB 250
-```
+3. **Endpoint Setup:**  
+   Replace the placeholder **`<YourRecoveryServiceEndpoint>`** in the script with the actual MBAM service endpoint address for key escrow.  
 
-## **Notes**
+## Deployment Options  
 
-- The script must be run as admin.
-- Ensure that there is enough free space on the C drive before running the script.
-- The two .ps1 scripts must be in the same folder, or make sure to update the path after the **`File`** parameter in line 40:
+This script can be deployed remotely using tools and methods such as:  
+- **Microsoft SCCM**  
+- **BigFix**  
+- **PDQ Deploy**  
+- **Ansible**  
+- **PowerShell Remoting**  
 
-```powershell
-Start-Process -FilePath "powershell.exe" -ArgumentList "-File .\Invoke-MbamClientDeployment.ps1 -RecoveryServiceEndpoint <YourRecoveryServiceEndpoint> -EncryptionMethod UNSPECIFIED -EncryptAndEscrowDataVolume -IgnoreEscrowOwnerAuthFailure" -Wait -NoNewWindow
-```
+Choose the tool that best fits your organization's infrastructure for seamless automation.  
+
+## Get Started  
+
+Explore the repository, review the script, and automate your disk management tasks today!  
+➡️ [Create-DriveD Repository on GitHub](https://github.com/nativw/Create-DriveD)  
