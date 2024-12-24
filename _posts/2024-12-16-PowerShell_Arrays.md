@@ -2,7 +2,7 @@
 title: "Using Arrays in PowerShell"
 layout: post
 date: 2024-12-16
-tags: powershell scripting datastructures
+tags: datastructures powershell
 categories: PowerShell Arrays
 image:
  path: CommonFiles/Array-1d.jpg
