@@ -6,7 +6,6 @@ categories: [PowerShell, Security]
 tags: [powershell, security, bitlocker, encryption]
 image:
  path: CommonFiles/Create-DriveD.png
- alt: Encryption
 ---
 
 # Create-DriveD.ps1  
