@@ -8,15 +8,11 @@ image:
  path: CommonFiles/Create-DriveD.png
 ---
 
-# Create-DriveD.ps1  
-
-[Link to the script on GitHub](https://github.com/nativw/Create-DriveD)  
-
-## Overview  
-
 Creating new partitions on computers can sometimes be a tedious task, especially if you're an IT professional supporting multiple remote sites.  
 
 Instead of connecting to remote computers one by one, I wrote an automatic script designed to simplify disk management and encryption tasks. This script can be modified to fit your specific requirements and can be deployed remotely using automated tools such as SCCM, BigFix, PDQ Deploy, Ansible, or even custom PowerShell remoting scripts.  
+
+[Link to the script on GitHub](https://github.com/nativw/Create-DriveD)
 
 ## Key Features  
 
