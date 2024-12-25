@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introducing Create-DriveD"
+title: "Create and Encrypt New Partitions"
 date: 2024-12-24
 categories: [PowerShell, Security]
 tags: [powershell, security, bitlocker, encryption]
