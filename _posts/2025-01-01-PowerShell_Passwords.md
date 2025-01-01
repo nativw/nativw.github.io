@@ -2,8 +2,8 @@
 layout: post
 title: "Dealing with Passwords in PowerShell"
 date: 2025-01-01
-categories: [PowerShell, Security]
-tags: [powershell, security, encryption]
+categories: [PowerShell, Security, Passwords, Automation]
+tags: [powershell, security, encryption, password, automation]
 image:
  path: CommonFiles/PowerShell-Password.jpg
 ---
