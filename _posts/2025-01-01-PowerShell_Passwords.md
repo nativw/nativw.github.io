@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dealing with Passwords in PowerShell"
-date: 2024-12-24
+date: 2025-01-01
 categories: [PowerShell, Security]
 tags: [powershell, security, encryption]
 image:
