@@ -4,25 +4,10 @@ title: "Managing Files and Folders Permissions in PowerShell"
 date: 2025-02-04
 categories: [PowerShell, File Security, Windows Administration, Automation]
 tags: [powershell, security, automation, access_control]
-image:
- path: CommonFiles/Manage_FilesFoldersPermissions.jpeg
+#image:
+# path: CommonFiles/Manage_FilesFoldersPermissions.jpeg
 ---
 # Managing File and Folder Permissions
-
-- **Table of Content**
-    - [What Are ACLs?](#what-are-acls)
-    - [Viewing Permissions](#viewing-permissions-get-acl)
-    - [Creating and Modifying Access Rules](#creating-and-modifying-access-rules)
-        - [Creating Access Rules](#creating-access-rules-new-object-systemsecurityaccesscontrolfilesystemaccessrule)
-        - [Modifying Permissions](#modifying-permissions-set-acl)
-    - [Advanced Permission Management](#advanced-permission-management)
-        - [Managing Inheritance](#managing-inheritance-setaccessruleprotection)
-        - [Viewing Inherited Permissions](#viewing-inherited-permissions)
-        - [Batch Modifying Permissions](#batch-modifying-permissions)
-        - [Understanding `Export-Clixml` and `Import-Clixml`](#understanding-export-clixml-and-import-clixml)
-        - [Backup & Restore ACLs](#backup--restore-acls)
-    - [Tips & Best Practices](#tips--best-practices)
-    
 Managing file and folder permissions is crucial for securing sensitive data and maintaining proper access control in Windows environments. PowerShell provides powerful tools, such as `Get-Acl` and `Set-Acl`, to view and modify permissions efficiently.
 
 This guide explores how to retrieve, modify, and manage ACL (Access Control List) settings using PowerShell. It covers essential commands, inheritance management, and best practices to help you take full control over file security.
