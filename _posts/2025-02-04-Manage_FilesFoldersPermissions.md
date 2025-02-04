@@ -4,8 +4,8 @@ title: "Managing Files and Folders Permissions in PowerShell"
 date: 2025-02-04
 categories: [PowerShell, File Security, Windows Administration, Automation]
 tags: [powershell, security, automation, access_control]
-#image:
-# path: CommonFiles/Manage_FilesFoldersPermissions.jpeg
+image:
+ path: CommonFiles/Manage_FilesFoldersPermissions.jpeg
 ---
 # Managing File and Folder Permissions
 Managing file and folder permissions is crucial for securing sensitive data and maintaining proper access control in Windows environments. PowerShell provides powerful tools, such as `Get-Acl` and `Set-Acl`, to view and modify permissions efficiently.
