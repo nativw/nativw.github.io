@@ -2,16 +2,8 @@
 layout: post
 title: "Managing Files and Folders Permissions in PowerShell"
 date: 2025-02-04
-categories:
- - PowerShell
- - File Security
- - Windows Administration
- - Automation
-tags:
- - powershell
- - security
- - automation
- - access_control
+categories: [PowerShell, File Security, Windows Administration, Automation]
+tags: [powershell, security, automation, access_control]
 image:
  path: CommonFiles/Manage_FilesFoldersPermissions.jpeg
 ---
