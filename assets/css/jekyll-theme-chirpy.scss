@@ -1,0 +1,15 @@
+---
+---
+
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+/* Change color of PowerShell built-in cmdlets in Rouge syntax highlighting */
+pre code .highlight span.nb { 
+    color: #ff79c6 !important;  /* Pink (VS Code-like) */
+    font-weight: bold !important;
+}
