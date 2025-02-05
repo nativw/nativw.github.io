@@ -229,3 +229,6 @@ jekyll-archives:
 # forcing rebuild
 force_rebuild: true
 dummy_update: true
+
+include:
+  - assets/css/custom.css
