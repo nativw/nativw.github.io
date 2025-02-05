@@ -1,5 +1,5 @@
 /* Change color of PowerShell built-in cmdlets in Rouge syntax highlighting */
-pre code .highlight span.nb { 
+pre code span.n { 
     color: #ff79c6 !important;  /* Pink (VS Code-like) */
     font-weight: bold !important;
 }
