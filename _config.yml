@@ -232,3 +232,5 @@ dummy_update: true
 
 include:
   - assets/css/custom.css
+
+# trigger rebuild
