@@ -13,3 +13,13 @@ span.n {
     color: #ff79c6 !important;  /* Pink (VS Code-like) */
     font-weight: bold !important;
 }
+
+html[data-mode=light] .highlight .err {
+  color: var(--code-color);
+  background-color: #ffffff00;
+}
+
+html:not([data-mode]) .highlight .err, html[data-mode=dark] .highlight .err {
+  color: var(--code-color);
+  background-color: #00000000;
+}
