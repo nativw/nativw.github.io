@@ -225,5 +225,5 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
-# forcing rebuild
+# force rebuild
 force_rebuild: true
