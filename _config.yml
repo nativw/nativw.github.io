@@ -119,10 +119,10 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: nativw/nativw.github.io
-    repo_id: 902558504
-    category: General
-    category_id: DIC_kwDONcvzKM4CmsAo
+    repo: # <gh-username>/<repo>
+    repo_id: # id
+    category: # category
+    category_id: #category_id
     mapping: # optional, default to 'pathname'
     strict: # optional, default to '0'
     input_position: top # optional, default to 'bottom'
