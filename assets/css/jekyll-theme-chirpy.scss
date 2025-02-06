@@ -18,6 +18,10 @@ span.nf {
   color: #CCCCCC; /* Silver (VS Code-like) */
 }
 
+span.nv {
+  color: #9CDCFE; /* Blue (Like how VS Code colors variables in PS) */
+}
+
 html[data-mode=light] .highlight .err {
   color: var(--code-color);
   background-color: #ffffff00;
