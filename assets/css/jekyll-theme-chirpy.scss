@@ -40,26 +40,3 @@ html:not([data-mode]) .highlight .err, html[data-mode=dark] .highlight .err {
   color: var(--code-color);
   background-color: #00000000;
 }
-
-/* Custom styles for code snippet buttons */
-/* More specific styles for code snippet buttons */
-.highlight .code-header .code-buttons .code-button {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 5px;
-}
-
-/* Specific colors for each button */
-.highlight .code-header .code-buttons .code-button.red {
-    background-color: #ff5f56 !important; /* Red */
-}
-
-.highlight .code-header .code-buttons .code-button.yellow {
-    background-color: #ffbd2e !important; /* Yellow */
-}
-
-.highlight .code-header .code-buttons .code-button.green {
-    background-color: #27c93f !important; /* Green */
-}
