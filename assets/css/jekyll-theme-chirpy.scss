@@ -14,6 +14,10 @@ span.n {
     font-weight: bold !important;
 }
 
+span.nf {
+  color: #CCCCCC; /* Silver (VS Code-like) */
+}
+
 html[data-mode=light] .highlight .err {
   color: var(--code-color);
   background-color: #ffffff00;
