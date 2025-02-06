@@ -9,6 +9,11 @@
 
 /* append your custom style below */
 /* Change color of PowerShell built-in cmdlets in Rouge syntax highlighting */
+
+span.bp {
+  color: #569CD6 /* the blue color that VS code is using for $true and $false */
+}
+
 span.n { 
     color: #ff79c6 !important;  /* Pink (VS Code-like) */
     font-weight: bold !important;
