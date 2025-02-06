@@ -179,10 +179,10 @@ Grant **read-only** access to all files in a folder:
 
 ```powershell
 Get-ChildItem -Path "C:\Temp" -Recurse | ForEach-Object {
-		$acl = Get-Acl -Path $_.FullName
-		$rule = New-Object System.Security.AccessControl.FileSystemAccessRule("DOMAIN\Username", "Read", "Allow")
-		$acl.SetAccessRule($rule)
-		Set-Acl -Path $_.FullName -AclObject $acl
+  $acl = Get-Acl -Path $_.FullName
+  $rule = New-Object System.Security.AccessControl.FileSystemAccessRule("DOMAIN\Username", "Read", "Allow")
+  $acl.SetAccessRule($rule)
+  Set-Acl -Path $_.FullName -AclObject $acl
 }
 ```
 
