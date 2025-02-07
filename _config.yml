@@ -14,9 +14,9 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Nativ # the main title
+title: Nativ | IT & Automation # the main title
 
-tagline: Scripting is fun! # it will display as the subtitle
+tagline: Code. Manage. Automate. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
