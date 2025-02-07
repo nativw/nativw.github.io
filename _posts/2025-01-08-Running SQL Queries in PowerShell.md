@@ -34,7 +34,7 @@ Where:
 
 Create a connection string with the necessary credentials:
 
-```
+```powershell
 # Define the connection string
 $ConnectionString = "Server=$Server;Database=$Database;User ID=MyUser;Password=MyPassword"
 ```

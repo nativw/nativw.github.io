@@ -56,13 +56,13 @@ New-Object System.Security.AccessControl.FileSystemAccessRule(
 
 Each parameter defines how access is granted or denied:
 
-| **Parameter** | **Description** |
-| --- | --- |
-| `IdentityReference` | The **user or group** (e.g., `"DOMAIN\Username"` or `"Everyone"`). |
-| `Rights` | The **permissions** (e.g., `"FullControl"`, `"Read"`, `"Write"`). |
-| `InheritanceFlags` | Defines if permissions **apply to subfolders/files**. (`None`, `ContainerInherit`, `ObjectInherit`) |
-| `PropagationFlags` | Determines how permissions **propagate** (used when inheritance is enabled). |
-| `AccessControlType` | `Allow` or `Deny`—whether the rule grants or blocks access. |
+| **Parameter**       | **Description**                                                                                     |
+| ------------------- | --------------------------------------------------------------------------------------------------- |
+| `IdentityReference` | The **user or group** (e.g., `"DOMAIN\Username"` or `"Everyone"`).                                  |
+| `Rights`            | The **permissions** (e.g., `"FullControl"`, `"Read"`, `"Write"`).                                   |
+| `InheritanceFlags`  | Defines if permissions **apply to subfolders/files**. (`None`, `ContainerInherit`, `ObjectInherit`) |
+| `PropagationFlags`  | Determines how permissions **propagate** (used when inheritance is enabled).                        |
+| `AccessControlType` | `Allow` or `Deny`—whether the rule grants or blocks access.                                         |
 
 ### **Examples:**
 

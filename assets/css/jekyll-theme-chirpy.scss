@@ -2,7 +2,7 @@
 ---
 
 @use 'main
-{%- if jekyll.environment == 'production' -%}
+{%- if jekyll.environment == ' production ' -%}
   .bundle
 {%- endif -%}
 ';
@@ -11,32 +11,33 @@
 /* Change color of PowerShell built-in cmdlets in Rouge syntax highlighting */
 
 span.bp {
-  color: #569CD6 /* the blue color that VS code is using for $true and $false */
+  color: #569cd6; /* the blue color that VS code is using for $true and $false */
 }
 
-span.n { 
-    color: #ff79c6 !important;  /* Pink (VS Code-like) */
-    font-weight: bold !important;
+span.n {
+  color: #ff79c6 !important; /* Pink (VS Code-like) */
+  font-weight: bold !important;
 }
 
 span.nf {
-  color: #CCCCCC; /* Silver (VS Code-like) */
+  color: #cccccc; /* Silver (VS Code-like) */
 }
 
 span.nv {
-  color: #9CDCFE; /* Blue (Like how VS Code colors variables in PS) */
+  color: #9cdcfe; /* Blue (Like how VS Code colors variables in PS) */
 }
 
 span.nx {
-  color: #CCCCCC /* Silver (VS Code-like) */
+  color: #cccccc; /* Silver (VS Code-like) */
 }
 
-html[data-mode=light] .highlight .err {
+html[data-mode='light'] .highlight .err {
   color: var(--code-color);
   background-color: #ffffff00;
 }
 
-html:not([data-mode]) .highlight .err, html[data-mode=dark] .highlight .err {
+html:not([data-mode]) .highlight .err,
+html[data-mode='dark'] .highlight .err {
   color: var(--code-color);
   background-color: #00000000;
 }
